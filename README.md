@@ -1,2 +1,2 @@
-# CPS_ESP32  
-Cyber Physical Systems Security - ESP32 implementation
+Cyber Physical Systems Security
+CPS_ESP32 implementation
