@@ -2,4 +2,4 @@
 
 ## to do 
 * encryption : use function Encrypt(&base, int(), Y, x) to encryption h and t
-### x is random number(1 < x < p-1)
+> x is random number(1 < x < p-1)
