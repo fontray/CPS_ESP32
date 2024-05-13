@@ -89,7 +89,8 @@ void oled_display(String msg) {
   sscanf(message, "Key and Humidity Temperature: [%llu, %llu, %llu]", &K, &humid, &temp);
 
   //to do : decrypt(humid, temp)
- 
+  uint64_t plaintext_humid = base.Decrypt(&base, humid, K);
+  uint64_t plaintext_temp = base.Decrypt(&base, temp, K);
 
   display.setCursor(0,0);          
   display.println("Temp: ");  
@@ -147,7 +148,8 @@ void loop() {
   memset(buffer, 0, sizeof(buffer));
 
   //to do : Encrypt(h, t)
- 
+  uint64_t *cipher_humid = base.Encrypt(&base, int(h), Y, 5);
+  uint64_t *cipher_temp = base.Encrypt(&base, int(t), Y, 5);
  
   snprintf(buffer, sizeof(buffer), "Key and Humidity Temperature: [%llu, %llu, %llu]", cipher_humid[0], cipher_humid[1], cipher_temp[1]);
   client.publish(topic, buffer);
@@ -157,4 +159,9 @@ void loop() {
 
   oled_display(msg_payload);
   delay(3000);
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> 80542290f9180b281e942e654b1d074624649ba0
