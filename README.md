@@ -7,3 +7,6 @@
 * LAB_4 : Use Elgamal Algorithm Encryption/Decryption the temperature/humidity
 * LAB_5 : Use Paillier Algorithm Encryption/Decryption the temperature/humidity
 * LAB_6 : Use Firebase realtime database to store/read the data of temperature/humidity
+
+##  ntlib 
+
