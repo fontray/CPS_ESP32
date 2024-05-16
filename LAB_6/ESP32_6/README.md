@@ -14,7 +14,9 @@ struct Elgamal base
 ```c
 rsa_init(struct RSA *rsa, uint64_t p, uint64_t q, uint64_t e)
 ```
-  - p/q is prime number and e is 
+   - p/q is prime number 
+   - gcd(\phi))
+   - 
 2. Elgamal
 ```c
 Elgamal_init(struct Elgamal *base, uint64_t p, uint64_t g)
