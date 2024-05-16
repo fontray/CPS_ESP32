@@ -21,7 +21,13 @@ rsa_init(struct RSA *rsa, uint64_t p, uint64_t q, uint64_t e)
 ```c
 Elgamal_init(struct Elgamal *base, uint64_t p, uint64_t g)
 ```
+   - g is prime number
+   - g is generator
+
 3. Paillier
 ```c
 Paillier_init(struct Paillier *paillier, uint64_t p, uint64_t q, uint64_t r, uint64_t g)
 ```
+   - p/q is prime number
+   - g is generator
+   - r is 
