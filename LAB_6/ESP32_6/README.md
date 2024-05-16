@@ -73,3 +73,8 @@ Decrypt_Elgamal(struct Elgamal *base, uint64_t cipher, uint64_t K)
 Decrypt_Paillier(struct Paillier *paillier, uint64_t cipher)
 ```
    - return int()
+
+> oled_display :
+```c
+oled_display(uint64_t t, uint64_t h)
+```
