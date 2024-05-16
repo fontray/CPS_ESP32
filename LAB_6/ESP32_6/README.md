@@ -30,4 +30,4 @@ Paillier_init(struct Paillier *paillier, uint64_t p, uint64_t q, uint64_t r, uin
 ```
    - p/q is prime number
    - g is generator
-   - r is 
+   - 0 < r < n and gcd(r,n) = 1 
