@@ -1,8 +1,10 @@
 # Firebase Realtime database
 
 ## to do 
-> encryption : use function Encrypt(&base, int(), Y, x) to encryption h and t
-* x is random number (1 < x < p-1)
+> Declare crypto algorithm (RSA, Paillier, Elgamal) :
+* struct RSA rsa
+* struct Paillier paillier
+* struct Elgamal base
 
 > decryption : use function Decrypt(&base, uint64_t(), Key) to decryption humid and temp
 * Key is message first variable
